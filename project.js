@@ -13,3 +13,10 @@ if (choice === 0) {
     playPC = "scissors";
 }
 console.log(playPC);
+
+function getHumanChoice() {
+    return prompt("какой твой выбор ?")
+}
+console.log(getHumanChoice());
+
+
