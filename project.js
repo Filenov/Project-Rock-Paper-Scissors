@@ -3,20 +3,34 @@ function getComputerChoice(max) {
   }
   
 const choice = getComputerChoice(3);
-let playPC;
+let computerChoice;
 
 if (choice === 0) {
-    playPC = "rock";
+    computerChoice = "rock";
 } else if (choice === 1) {
-    playPC = "paper";
+    computerChoice = "paper";
 } else { 
-    playPC = "scissors";
+    computerChoice = "scissors";
 }
-console.log(playPC);
 
 function getHumanChoice() {
-    return prompt("какой твой выбор ?")
+    return prompt("Какой твой выбор ?");
 }
-console.log(getHumanChoice());
+const humanSelection = getHumanChoice().toLowerCase();
+const computerSelection = computerChoice;
+console.log(humanSelection, computerSelection);
+
+
+let computerScore = 0; // сумма выигрышей компьютера
+let humanScore = 0;  // сумма выигрышей человека
+
+
+
+
+
+
+
+
+
 
 
